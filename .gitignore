@@ -1,0 +1,55 @@
+# Node modules
+node_modules/
+node_modules/
+
+# Environment variables
+.env
+.env
+
+# Logs
+logs/
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build / Dist directories
+dist/
+dist/
+build/
+
+# Firebase-related files (if using Firebase CLI)
+firebase-debug.log
+firebase.json
+.firebaserc
+.firebase/
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Editor-specific
+.vscode/
+.idea/
+
+# Misc
+*.swp
+*.swo
+
+# Vite cache (frontend)
+.vite/
+
+# Tailwind CSS build (frontend)
+.tailwind/
+
+# Coverage (if running tests)
+coverage/
+coverage/
+
+# Package lock or yarn lock files (if preferred)
+yarn.lock
+yarn.lock
+
+# Optional: Ignore uploads or temporary files
+uploads/
+uploads/
