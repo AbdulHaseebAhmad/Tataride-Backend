@@ -5,6 +5,7 @@ configDotenv();
 
 export const sendBookingConfirmation = async (req, res) => {
   const { pickup, dropoff, customerName,customerPhone,fare,date,time,note } = req.body;
+  let ndate = new Date(date).toString();
 
   try {
     const transporter = nodemailer.createTransport({
@@ -26,7 +27,7 @@ export const sendBookingConfirmation = async (req, res) => {
         <p><strong>Pickup Location:</strong> ${pickup}</p>
         <p><strong>DropOff Location:</strong> ${dropoff}</p>
         <p><strong>Pickup Time:</strong> ${time}</p>
-        <p><strong>Pickup Date:</strong> ${date}</p>
+        <p><strong>Pickup Date:</strong> ${ndate}</p>
         <p><strong>Pickup Fare:</strong> $ ${fare}</p>
         <p><strong>Drivers Note:</strong>  ${note}</p>
 
