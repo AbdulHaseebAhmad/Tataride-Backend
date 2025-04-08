@@ -5,6 +5,7 @@ import cors from "cors";
 
 import googleRoute from './Routes/Google/googleRoute.js';
 import paymentRoute from './Routes/Payments/paymentRoute.js';
+import emailRoute from './Routes/Email/emailRoute.js';
 
 configDotenv();
 
@@ -23,6 +24,7 @@ app.use(
 app.use(express.json());
 app.use(googleRoute);
 app.use(paymentRoute);
+app.use(emailRoute);
 
 app.get('/', (req, res) => {
   res.send('Server is Running');
