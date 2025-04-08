@@ -17,7 +17,7 @@ export const sendBookingConfirmation = async (req, res) => {
 
     await transporter.sendMail({
       from: `"Booking Confirmation" <${process.env.ADMIN_EMAIL}>`,
-      to: "admin@homeglitz.com.au",  
+      to: process.env.ADMIN_RECIEVE_EMAIL,  
       subject: 'New Booking Confirmed',
       html: `
         <h2>You have a New Booking</h2>
